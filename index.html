@@ -18,7 +18,15 @@
             theme:{
                 extend:{
                     colors:{
-                        'Ashik':'green'
+                        'teacolorone':'#F4F4F4',
+                        'teacolortwo':'rgba(244, 244, 244, 0.00)',
+                        'freshcolorone':'#F00',
+                        'freshcolortwo':'#FF8938',
+                        'freshcolorthree':'#D9D9D9',
+                        'freshcolorfour':'rgba(255, 255, 255, 0.00)',
+                        'freshone':'rgba(230, 166, 35, 0.10)',
+                        'freshtwo':'rgba(87, 118, 57, 0.10)',
+
                     }
                 }
             }
@@ -32,7 +40,6 @@
         padding: 0;
         box-sizing: border-box;
         font-family: Manrope;
-        background-color: white;
     }
     body{
         
@@ -40,7 +47,7 @@
 </style>
 
 </head>
-<body>
+<body style="background-color: white;">
     <header class="container mx-auto py-20 ">
         <!-- good tea time  -->
             <div class="flex lg:justify-between items-center flex-col lg:flex-row">
@@ -65,9 +72,65 @@
     <main class="container mx-auto my-20 py-28">
         <!-- our feature section  -->
         <section class="text-center space-y-11">
-            <h1>Our Featured Products</h1>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-            <div class="tea-container ">
+            <h1 class=" text-2xl lg:text-5xl font-extrabold text-black">Our Featured Products</h1>
+            <p class="lg:max-w-[56.31rem] lg:mx-auto lg:text-xl font-medium">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+            <div class="tea-container flex flex-col lg:flex-row justify-center items-center gap-6">
+                <div class="card shadow-xl p-8 max-w-72 max-h-96 bg-gradient-to-b from-teacolorone to-blue-teacolortwo ">
+                    <figure class="px-10">
+                      <img src="images/tea-1.png" alt="Shoes" class="" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-extrabold text-2xl text-black ">Milk Tea</h2>
+                      <p class="text-black">Creamer could be replaced by fresh milk</p>
+                    </div>
+                  </div>
+                <div class="card shadow-xl p-8 max-w-72 max-h-96 bg-gradient-to-b from-teacolorone to-blue-teacolortwo ">
+                    <figure class="px-10">
+                      <img src="images/tea-2.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-extrabold text-2xl text-black ">Black Tea</h2>
+                      <p class="text-black">Creamer could be replaced by fresh milk</p>
+                    </div>
+                  </div>
+                <div class="card shadow-xl p-8 max-w-72 max-h-96 bg-gradient-to-b from-teacolorone to-blue-teacolortwo">
+                    <figure class="px-10">
+                      <img src="images/tea-3.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-extrabold text-2xl text-black ">Lemon Tea</h2>
+                      <p class="text-black">Creamer could be replaced by fresh milk</p>
+                    </div>
+                  </div>
+                <div class="card shadow-xl p-8 max-w-72 max-h-96 bg-gradient-to-b from-teacolorone to-blue-teacolortwo ">
+                    <figure class="px-10">
+                      <img src="images/tea-4.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-extrabold text-2xl text-black ">Green Tea</h2>
+                      <p class="text-black">Creamer could be replaced by fresh milk</p>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <!-- Great Tea Fresh Tea Section  -->
+        <section class="my-28 flex flex-col lg:flex-row gap-12 ">
+            <div class="lg:w-1/2 grid lg:grid-cols-2 gap-x-7 gap-y-7 lg:grid-rows-3 justify-center">
+                <div class="bg-black  bg-gradient-to-r from-freshcolorone to-freshcolortwo  h-32 "></div>
+                <div class="flex justify-center  items-center row-span-2 bg-freshone "><img src="./images/fresh-1.png" alt=""></div>
+                <div class="flex justify-center  items-center row-span-2 bg-freshtwo"><img src="./images/fresh-2.png" alt=""></div>
+                <div class="bg-black bg-gradient-to-r from-freshcolorthree to-freshcolorfour   h-32 "></div>
+
+
+
+            </div>
+            <div class="text-black space-y-4 lg:w-1/2">
+                <h1 class="text-2xl lg:text-4xl font-extrabold">Great Tea, Freshly Presented</h1>
+                <p class="text-xl font-medium lg:w-[36rem]">The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
+                <h5 class="text-2xl font-extrabold">Unique Taste</h5>
+                <p class="text-xl font-medium lg:w-[28rem]">A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
+                <h5 class="text-2xl font-extrabold">Premium Quality</h5>
+                <p class="text-xl font-medium lg:w-[28rem]">Premium Quality that makes tea more elegant and more durable when you use it.</p>
             </div>
         </section>
 
